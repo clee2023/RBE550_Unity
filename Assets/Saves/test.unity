@@ -8222,6 +8222,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.029999971
       objectReference: {fileID: 0}
+    - target: {fileID: 4914549699303064443, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
+      propertyPath: debugVisualization
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6789262394414307240, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
       propertyPath: m_Name
       value: Gopher
@@ -8269,6 +8273,14 @@ PrefabInstance:
     - target: {fileID: 6789262394414307243, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7640974559703229910, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
+      propertyPath: laserLinkId
+      value: gopher/laser_link
+      objectReference: {fileID: 0}
+    - target: {fileID: 7640974559703229910, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
+      propertyPath: laserTopicName
+      value: gopher/base_scan
       objectReference: {fileID: 0}
     - target: {fileID: 8675064451955262409, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
       propertyPath: m_LocalPosition.z
