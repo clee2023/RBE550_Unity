@@ -48,15 +48,22 @@ public class AutoNavigation : MonoBehaviour
     public LineRenderer lineRenderer;
     public bool drawPathEnabled = true;
 
+    public Transform goalObj;
+
 
     void Start()
     {
         // never enabled
         agent.enabled = false;
+	
+	SetGoal(goalObj.position);
+	//active = true;
+	EnableAutonomy(false);
     }
 
     void Update()
     {
+	FixedUpdate();
         // Path visualization
         if (!drawPathEnabled || waypoints.Length == 0)
         {
