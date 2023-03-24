@@ -35,20 +35,12 @@ public class HRVONavigation : MonoBehaviour
     private Vector3[] waypoints = new Vector3[0];
     private int waypointIndex = 0;
     private bool rotationNeeded = true;
-    /*
-    // temp - could be removed after controller is implemented
-    private float prevDis = 0f;
-    private float errorCheckTime;
-    private float errorCheckFreq = 1.0f;
-    */
-    
+
     // Visualization
     public GameObject goalPrefab;
     private GameObject goalObject;
     public LineRenderer lineRenderer;
     public bool drawPathEnabled = true;
-
-    public Transform goalObj;
 
 
     void Start()
@@ -56,14 +48,12 @@ public class HRVONavigation : MonoBehaviour
         // never enabled
         agent.enabled = false;
 	
-	SetGoal(goalObj.position);
-	//active = true;
-	EnableAutonomy(false);
     }
 
     void Update()
     {
 	FixedUpdate();
+	/*
         // Path visualization
         if (!drawPathEnabled || waypoints.Length == 0)
         {
@@ -93,7 +83,7 @@ public class HRVONavigation : MonoBehaviour
                                      waypoints[waypoints.Length-1], 
                                      Quaternion.identity);
             Utils.SetGameObjectLayer(goalObject, "Robot", true);
-        }
+        }*/
     }
 
     void FixedUpdate()
@@ -123,22 +113,6 @@ public class HRVONavigation : MonoBehaviour
         // move to current waypoint
         float currentDis = (transform.position - waypoints[waypointIndex]).magnitude;
         
-        /*
-        // temp - Check if the robot is approaching the waypoint
-        if (prevDis == 0)
-            prevDis = currentDis;
-        errorCheckTime += Time.fixedDeltaTime;
-        if (errorCheckTime > errorCheckFreq)
-        {
-            errorCheckTime = 0;
-            if ((currentDis - prevDis) > agent.speed*errorCheckFreq/2f)
-            {
-                SetGoal(this.goal);
-                prevDis = 0;
-            }
-            prevDis = currentDis;
-        }
-        */
 
         // Check distance to waypoints and update motion
         if (currentDis > tolerance)
