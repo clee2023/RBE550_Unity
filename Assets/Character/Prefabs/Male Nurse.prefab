@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 8900376989591558680}
   agent: {fileID: 3791229302569914360}
-  loop: 1
+  loop: 0
 --- !u!1001 &3093665212892112777
 PrefabInstance:
   m_ObjectHideFlags: 0

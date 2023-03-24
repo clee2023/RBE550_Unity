@@ -9,7 +9,7 @@ using UnityEngine.AI;
 ///     Unity A* algorithm from Nav Mesh. The local planning 
 ///     strategy now is simply "rotate then move forward".
 /// </summary>
-public class AutoNavigation : MonoBehaviour
+public class HRVONavigation : MonoBehaviour
 {
     public bool active;
 
@@ -48,11 +48,17 @@ public class AutoNavigation : MonoBehaviour
     public LineRenderer lineRenderer;
     public bool drawPathEnabled = true;
 
+    public Transform goalObj;
+
 
     void Start()
     {
         // never enabled
         agent.enabled = false;
+	
+	SetGoal(goalObj.position);
+	//active = true;
+	EnableAutonomy(false);
     }
 
     void Update()
