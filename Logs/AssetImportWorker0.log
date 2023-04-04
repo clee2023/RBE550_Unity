@@ -542,3 +542,184 @@ Received Import Request.
   path: Assets/Scripts/APF/APF_dyamic.cs
   artifactKey: Guid(85474525bc5db962a97107d4795c25e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/APF/APF_dyamic.cs using Guid(85474525bc5db962a97107d4795c25e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1a9e39e92375e67e4055e1c39fc5d66') in 0.006116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 86.979220 seconds.
+  path: Assets/Models/Object
+  artifactKey: Guid(6df3b8e3404c4964e8662404fb6439a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Object using Guid(6df3b8e3404c4964e8662404fb6439a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f46ad64755d75228cb2adb41adf5efc9') in 0.001170 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.792679 seconds.
+  path: Assets/Models/Structure
+  artifactKey: Guid(8ba745c7061cdd84ba8c80dfc94bd5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure using Guid(8ba745c7061cdd84ba8c80dfc94bd5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa946e0340e599b11d9ec9bcd278ad5b') in 0.000812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.038679 seconds.
+  path: Assets/Models/Structure/bathroom_door.dae
+  artifactKey: Guid(d13f8d2e582d387b8b9a4bb4cdeab492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/bathroom_door.dae using Guid(d13f8d2e582d387b8b9a4bb4cdeab492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e13feaae000335d33c1c618402de5590') in 0.881016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Models/Structure/hospital_handrail.dae
+  artifactKey: Guid(f6a458b81b58af146be93ca3f422d66f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/hospital_handrail.dae using Guid(f6a458b81b58af146be93ca3f422d66f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b83f22d79dac09346aff295a93915576') in 0.343746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Models/Structure/hospital_handrail_end2.dae
+  artifactKey: Guid(1a259f53af69836598b946bade1ca27a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/hospital_handrail_end2.dae using Guid(1a259f53af69836598b946bade1ca27a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd95d1c2543b821cf63a1f9c95e1100b8') in 0.026671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Models/Structure/steel_door_2m.dae
+  artifactKey: Guid(d8a879a2fab93ad4995c4dfde631682b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/steel_door_2m.dae using Guid(d8a879a2fab93ad4995c4dfde631682b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a32de45f934354c93c9c94d8dbd804f9') in 0.081305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Models/Structure/wall_1m.dae
+  artifactKey: Guid(40a3b880c3dc4d6acac2a2385022e0cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/wall_1m.dae using Guid(40a3b880c3dc4d6acac2a2385022e0cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '958f041a84bdc0aa7ec448b792ab42a8') in 0.253272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Models/Structure/wall_window.dae
+  artifactKey: Guid(4d1b429aa057b9ff2ae1e99c8472ed5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/wall_window.dae using Guid(4d1b429aa057b9ff2ae1e99c8472ed5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd65487c7531f287c5b8f70789a8b080e') in 0.025551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Models/Structure/ceiling.dae
+  artifactKey: Guid(3bf40af51435f31e992fecfc0e8867ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/ceiling.dae using Guid(3bf40af51435f31e992fecfc0e8867ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b448feb28326238afd54b92214125ed9') in 0.280705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Models/Structure/window.dae
+  artifactKey: Guid(0a80e4900c7a754adbcdc8cb8020eceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/window.dae using Guid(0a80e4900c7a754adbcdc8cb8020eceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afddb1b9d26da2a9eacd567a7f197e6e') in 0.224945 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Models/Structure/wall_door_1.06m.dae
+  artifactKey: Guid(3fb2a4b84f8c28ff38ab4b9e78bdd607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/wall_door_1.06m.dae using Guid(3fb2a4b84f8c28ff38ab4b9e78bdd607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41278952c5ade560c8222af2ed74016e') in 0.031405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Models/Structure/ceiling_light.dae
+  artifactKey: Guid(2d07d679baaa13d5bb318f3ccedc04e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/ceiling_light.dae using Guid(2d07d679baaa13d5bb318f3ccedc04e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28a5f2beeb8aead2bf70ea17a2f4e578') in 0.264762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000951 seconds.
+  path: Assets/Models/Structure/hospital_structure.dae
+  artifactKey: Guid(c1402505d2a217745b9ac8272cee03be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/hospital_structure.dae using Guid(c1402505d2a217745b9ac8272cee03be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d4b41d9d03b131ebfe1137217a72521') in 0.037055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000988 seconds.
+  path: Assets/Models/Structure/wall_door_0.92m.dae
+  artifactKey: Guid(7369fec402e4dce1a8d1ac64e8c442bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/wall_door_0.92m.dae using Guid(7369fec402e4dce1a8d1ac64e8c442bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a69b510747072158d5c4765d9a4d24c6') in 0.022790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/Models/Structure/floor.dae
+  artifactKey: Guid(ae796f6fe27784de4ae0ea5597db08a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/floor.dae using Guid(ae796f6fe27784de4ae0ea5597db08a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eac36b3dfb4a984d8a6295360d03d86a') in 0.018917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000952 seconds.
+  path: Assets/Models/Structure/wall_door_0.82m.dae
+  artifactKey: Guid(a9a740d9b29f9bd9cbfe22f4752f182f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/wall_door_0.82m.dae using Guid(a9a740d9b29f9bd9cbfe22f4752f182f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6432fc5069477c8da8b518890f2a466b') in 0.028931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Models/Structure/wooden_door.dae
+  artifactKey: Guid(394e61a6ea729f243aa6a5e576480a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/wooden_door.dae using Guid(394e61a6ea729f243aa6a5e576480a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fab8c632a93718eb37ac99f20931dde') in 0.068122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Models/Structure/hospital_handrail_end1.dae
+  artifactKey: Guid(e27d66e748046a15296351455852e6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/hospital_handrail_end1.dae using Guid(e27d66e748046a15296351455852e6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '077616231fd07c67f41c91ae319951a8') in 0.018910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Models/Structure/wall_door_2m.dae
+  artifactKey: Guid(f9e8cfd64ddd2dd4398935a23eba8641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/wall_door_2m.dae using Guid(f9e8cfd64ddd2dd4398935a23eba8641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a13b5f2f589008f105cd5f6c52b9ed22') in 0.022680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Models/Structure/wall_door_1.22m.dae
+  artifactKey: Guid(ac372aaa20bce83429506af024659011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/wall_door_1.22m.dae using Guid(ac372aaa20bce83429506af024659011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a122d3106031fee19dce3b55d094157') in 0.034527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Models/Structure/bathroom_water_block.dae
+  artifactKey: Guid(fa2f30b52b552130f812a598c8b50c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Structure/bathroom_water_block.dae using Guid(fa2f30b52b552130f812a598c8b50c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53e555bef600af10f6b6f23f51f1b5c1') in 0.012300 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004686 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.477 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1478ms)
+		BeginReloadAssembly (147ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (54ms)
+		EndReloadAssembly (1263ms)
+			LoadAssemblies (100ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (427ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (475ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (339ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (56ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3838 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.7 MB.
+System memory in use after: 155.9 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 4477.
+Total: 7.048523 ms (FindLiveObjects: 0.477267 ms CreateObjectMapping: 0.187677 ms MarkObjects: 6.259923 ms  DeleteObjects: 0.122548 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
