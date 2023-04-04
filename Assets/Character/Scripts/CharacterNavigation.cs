@@ -18,11 +18,9 @@ public class CharacterNavigation : MonoBehaviour
     private int currentIndex = 0;
 
 
-    public Transform goal;
-
     void Start()
     {
-	agent.destination = goal.position;
+
     }
 
     void Update()
