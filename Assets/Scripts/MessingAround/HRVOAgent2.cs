@@ -81,7 +81,7 @@ public class Agent
 public class HRVOAlgorithm
 {
     // public float range = 5f; // Maximum range to consider for agents
-    public float agentRadius = 5f; // Radius of agents for collision avoidance
+    public float agentRadius = 0.38f; // Radius of agents for collision avoidance
     //public float timeHorizon = 2f; // Time horizon for collision avoidance
     //public float timeStep = 0.1f; // Time step for updating velocities
 

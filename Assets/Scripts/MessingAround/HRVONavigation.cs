@@ -47,7 +47,7 @@ public class HRVONavigation : MonoBehaviour
 
     void Update()
     {
-        FixedUpdate();
+        //FixedUpdate();
         // Path visualization
         if (!drawPathEnabled || waypoints.Length == 0)
         {
