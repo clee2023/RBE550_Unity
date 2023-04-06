@@ -79,4 +79,9 @@ public class CharacterNavigation : MonoBehaviour
             agent.SetDestination(targetTrajectory[currentIndex]);
         }
     }
+
+    public Vector3 getCurrentWaypoint()
+    {
+        return targetTrajectory[currentIndex];
+    }
 }

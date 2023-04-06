@@ -17,7 +17,7 @@ public class ControlGopher : MonoBehaviour
 	public Vector3 linearVelocity;
 
 	private Vector3[] humanScanPositions; // list of positions to be clustered, all in world frame
-    public float clusterDistanceThreshold = 0.5f; // distance threshold for clustering
+	public float clusterDistanceThreshold = 0.5f; // distance threshold for clustering
     private List<List<Vector3>> clusters = new List<List<Vector3>>(); // list of clusters
 
 	public List<Vector3> centroids; // centroid locations in world frame

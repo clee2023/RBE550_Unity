@@ -3,10 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class HRVONavigation : MonoBehaviour
+public class HRVOExample : MonoBehaviour
 {
-    public HRVOAgent2 hrvo;
-    private Vector3 newVelocity;
+    public float radius = 0.38f;
+    public float maxSpeed = 100f;
+
+    public List<GameObject> neighbors;
+    public Vector3 newVelocity;
+
+    // general
+    public GameObject centerObject;
+    protected Vector3 rayStartPosition;
+    protected Vector3 rayStartForward;
+    // scan params
+    public int updateRate = 10;
+    protected float scanTime;
+    public int samples = 180;
+    public float angleMin = -1.5708f;
+    public float angleMax = 1.5708f;
+    protected float angleIncrement;
+    public float rangeMin = 0.1f;
+    public float rangeMax = 5.0f;
+    // containers
+    protected RaycastHit[] raycastHits;
+    protected Quaternion[] rayRotations;
+    private float[] directions;
+
+
 
     public bool active;
 
@@ -31,7 +54,14 @@ public class HRVONavigation : MonoBehaviour
     private NavMeshPath path;
     private Vector3[] waypoints = new Vector3[0];
     private int waypointIndex = 0;
-
+    private bool rotationNeeded = true;
+    /*
+    // temp - could be removed after controller is implemented
+    private float prevDis = 0f;
+    private float errorCheckTime;
+    private float errorCheckFreq = 1.0f;
+    */
+    
     // Visualization
     public GameObject goalPrefab;
     private GameObject goalObject;
@@ -41,12 +71,32 @@ public class HRVONavigation : MonoBehaviour
 
     void Start()
     {
+        neighbors = new List<GameObject>();
+
+        // Containers
+        rayRotations = new Quaternion[samples];
+        directions = new float[samples];
+        // Calculate resolution based on angle limit and number of samples
+        angleIncrement = (angleMax - angleMin) / (samples - 1);
+        for (int i = 0; i < samples; ++i)
+        {
+            directions[i] = angleMin + i * angleIncrement;
+            rayRotations[i] = 
+                Quaternion.Euler(new Vector3(0f, directions[i] * Mathf.Rad2Deg, 0f));
+        }
+        // Start scanning
+        scanTime = 1f / updateRate;
+        //InvokeRepeating("Scan", 1f, scanTime);
+
         agent.enabled = false;
 
     }
 
     void Update()
     {
+        FindNeighbors();
+
+
         FixedUpdate();
         // Path visualization
         if (!drawPathEnabled || waypoints.Length == 0)
@@ -81,21 +131,73 @@ public class HRVONavigation : MonoBehaviour
         
     }
 
+    private void FindNeighbors()
+    {
+        neighbors = Scan();
+    }
+    
+    // modified from Surrounding Detection
+    private List<GameObject> Scan()
+    {
+        List<GameObject> scanHumans = new List<GameObject>();
+        // Cast rays towards diffent directions to find colliders
+        rayStartPosition = centerObject.transform.position;
+        rayStartForward = centerObject.transform.forward;
+        for (int i = 0; i < samples; ++i)
+        {
+            // Ray angle
+            Vector3 rotation = rayRotations[i] * rayStartForward;
+            // Check if hit colliders within distance
+            raycastHits = new RaycastHit[samples];
+            if (Physics.Raycast(rayStartPosition, rotation, out raycastHits[i], rangeMax) 
+                && (raycastHits[i].distance >= rangeMin)
+                && (!raycastHits[i].collider.isTrigger) )
+            {
+                if (raycastHits[i].collider.gameObject.tag == "Human")
+                {
+                    GameObject human = raycastHits[i].collider.gameObject;
+                    if (!scanHumans.Contains(human))
+                    {
+                        scanHumans.Add(human);
+                    }
+                }
+                
+            }
+        }
+        return scanHumans;
+    }
 
     private void ComputeNewVelocity(Vector3 waypoint)
     {
-        //hrvo.setTarget(waypoint);
-        newVelocity = hrvo.CalculatePreferredVelocity(waypoint);
+        Vector3 waypointVector = waypoint - transform.position;
+        Vector3 prefVelocity = waypointVector.normalized * maxSpeed;
+
+        newVelocity = prefVelocity;
+
+        foreach (GameObject neighbor in neighbors)
+        {
+            Vector3 relativePosition = neighbor.transform.position - transform.position;
+            Vector3 relativeVelocity = newVelocity - neighbor.GetComponent<Rigidbody>().velocity;
+            float distSq = relativePosition.sqrMagnitude;
+
+            float combinedRadius = radius + neighbor.GetComponent<CapsuleCollider>().radius;
+            float combinedRadiusSq = combinedRadius * combinedRadius;
+
+            if (distSq < combinedRadiusSq)
+            {
+                // Collision detected
+                Vector3 w = relativeVelocity - relativePosition / Time.deltaTime;
+                Vector3 u = prefVelocity - w;
+                newVelocity = w + u.normalized * agent.speed;
+            }
+        }
     }
 
     private void NavigateToWaypoint(Vector3 waypoint)
     {
         ComputeNewVelocity(waypoint);  
-
-        // float angle = Mathf.Atan2(newVelocity.z, newVelocity.x); // Calculate the angle between the agent's current heading and the vector to the preferred velocity.
-        float maxAngle = 0.8f; // max speed
-        // float angularSpeed = Mathf.Clamp(angle, -maxAngle, maxAngle); // Set the angular velocity to the angle between the agent's current heading and the vector to the preferred velocity, clamped to the maximum turning angle.
-        float Kp = 0.1f;
+        // P controller, Kp = 2
+        float Kp = (float) 0.5;
         // Errors
         Quaternion targetRotation = Quaternion.LookRotation(new Vector3(newVelocity[0], 0.0f, newVelocity[2]).normalized);
         float angleDifference = Mathf.DeltaAngle(targetRotation.eulerAngles[1], 
@@ -106,10 +208,8 @@ public class HRVONavigation : MonoBehaviour
         {
             // set angular speed
             angularSpeed = Kp * angleDifference;
-            angularSpeed = Mathf.Clamp(angularSpeed, -maxAngle, maxAngle);
+            angularSpeed = Mathf.Clamp(angularSpeed, -agent.angularSpeed, agent.angularSpeed);
         }
-        
-        //Debug.Log(angularSpeed);
         float lineawrSpeed = newVelocity.magnitude;
         lineawrSpeed = Mathf.Clamp(lineawrSpeed, -agent.speed, agent.speed);
         wheelController.SetRobotVelocity(lineawrSpeed, angularSpeed);
@@ -157,6 +257,7 @@ public class HRVONavigation : MonoBehaviour
         {
             waypointIndex ++;
             // prevDis = 0; // temp
+            rotationNeeded = true;
             // Fianl goal is reached
             if (waypointIndex == waypoints.Length)
             {
@@ -260,6 +361,7 @@ public class HRVONavigation : MonoBehaviour
         // Set trajectories
         SetTrajectory(path);
         waypointIndex = 0;
+        rotationNeeded = true;
         return (path.corners.Length != 0);
     }
     private void SetTrajectory(NavMeshPath path)
