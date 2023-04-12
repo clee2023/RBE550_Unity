@@ -4019,6 +4019,23 @@ MonoBehaviour:
   robot: {fileID: 468575327}
   navigation: {fileID: 468575328}
   goal: {fileID: 1648758380}
+--- !u!114 &468575335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468575327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb297b353884615891b83d4540b6537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1648758380}
+  maxForce: 10
+  maxVelocity: 5
+  safeDistance: 5
+  obstacleRadius: 1
 --- !u!1001 &472776361
 PrefabInstance:
   m_ObjectHideFlags: 0
