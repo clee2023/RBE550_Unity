@@ -43,13 +43,13 @@ public class InRangeSensor : MonoBehaviour
         }
         // Start scanning
         scanTime = 1f / updateRate;
-        //InvokeRepeating("Scan", 1f, scanTime);
+        InvokeRepeating("FindAgents", 1f, scanTime);
 
     }
 
     void Update()
     {
-        FindAgents();
+        //FindAgents();
         
     }
 
@@ -60,8 +60,9 @@ public class InRangeSensor : MonoBehaviour
     
     // modified from Surrounding Detection
     private List<GameObject> ScanAgents()
+    //private List<GameObject> ScanAgents()
     {
-        List<GameObject> scanAgents = new List<GameObject>();
+        List<GameObject> scannedAgents = new List<GameObject>();
         // Cast rays towards diffent directions to find colliders
         rayStartPosition = centerObject.transform.position;
         rayStartForward = centerObject.transform.forward;

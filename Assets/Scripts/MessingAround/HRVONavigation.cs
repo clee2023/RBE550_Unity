@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class HRVONavigation : MonoBehaviour
 {
     public HRVOAgent2 hrvo;
+    public InRangeSensor sensor;
     private Vector3 newVelocity;
 
     public bool active;
@@ -31,6 +32,7 @@ public class HRVONavigation : MonoBehaviour
     private NavMeshPath path;
     private Vector3[] waypoints = new Vector3[0];
     private int waypointIndex = 0;
+    private bool rotationNeeded = true;
 
     // Visualization
     public GameObject goalPrefab;
@@ -88,14 +90,14 @@ public class HRVONavigation : MonoBehaviour
         newVelocity = hrvo.CalculatePreferredVelocity(waypoint);
     }
 
-    private void NavigateToWaypoint(Vector3 waypoint)
+    private void NavigateToWaypointHRVO(Vector3 waypoint)
     {
         ComputeNewVelocity(waypoint);  
 
         // float angle = Mathf.Atan2(newVelocity.z, newVelocity.x); // Calculate the angle between the agent's current heading and the vector to the preferred velocity.
-        float maxAngle = 0.8f; // max speed
+        float maxAngle = 1.8f; // max speed
         // float angularSpeed = Mathf.Clamp(angle, -maxAngle, maxAngle); // Set the angular velocity to the angle between the agent's current heading and the vector to the preferred velocity, clamped to the maximum turning angle.
-        float Kp = 0.1f;
+        float Kp = 0.35f;
         // Errors
         Quaternion targetRotation = Quaternion.LookRotation(new Vector3(newVelocity[0], 0.0f, newVelocity[2]).normalized);
         float angleDifference = Mathf.DeltaAngle(targetRotation.eulerAngles[1], 
@@ -114,10 +116,6 @@ public class HRVONavigation : MonoBehaviour
         lineawrSpeed = Mathf.Clamp(lineawrSpeed, -agent.speed, agent.speed);
         wheelController.SetRobotVelocity(lineawrSpeed, angularSpeed);
     }
-
-
-
-    /*OLD AUTO NAVIGATION STUFF*/
 
     void FixedUpdate()
     {
@@ -146,17 +144,40 @@ public class HRVONavigation : MonoBehaviour
         // move to current waypoint
         float currentDis = (transform.position - waypoints[waypointIndex]).magnitude;
         
+        /*
+        // temp - Check if the robot is approaching the waypoint
+        if (prevDis == 0)
+            prevDis = currentDis;
+        errorCheckTime += Time.fixedDeltaTime;
+        if (errorCheckTime > errorCheckFreq)
+        {
+            errorCheckTime = 0;
+            if ((currentDis - prevDis) > agent.speed*errorCheckFreq/2f)
+            {
+                SetGoal(this.goal);
+                prevDis = 0;
+            }
+            prevDis = currentDis;
+        }
+        */
 
         // Check distance to waypoints and update motion
         if (currentDis > tolerance)
         {
-            NavigateToWaypoint(waypoints[waypointIndex]);
+            if (sensor.scannedAgents.Count != 0)
+            {
+                NavigateToWaypointHRVO(waypoints[waypointIndex]);
+            }
+            else{
+                NavigateToWaypoint(waypoints[waypointIndex]);
+            }
         }
         // current waypoint reached
         else
         {
             waypointIndex ++;
             // prevDis = 0; // temp
+            rotationNeeded = true;
             // Fianl goal is reached
             if (waypointIndex == waypoints.Length)
             {
@@ -164,7 +185,39 @@ public class HRVONavigation : MonoBehaviour
                 DisableAutonomy();
             }
         }
-    }  
+    }
+
+    /*OLD AUTO NAVIGATION STUFF*/
+
+    private void NavigateToWaypoint(Vector3 waypoint)
+    {
+        // P controller, Kp = 2
+        float Kp = 2;
+        // Errors
+        float distance = (waypoint - transform.position).magnitude;
+        Quaternion targetRotation = Quaternion.LookRotation(waypoint - transform.position);
+        float angleDifference = Mathf.DeltaAngle(targetRotation.eulerAngles[1], 
+                                                 transform.rotation.eulerAngles[1]);
+
+        // Adjust rotation angle first
+        if (Mathf.Abs(angleDifference) > 1 && rotationNeeded) // 1° tolorance
+        {
+            // set angular speed
+            float angularSpeed = Kp * angleDifference;
+            angularSpeed = Mathf.Clamp(angularSpeed, -agent.angularSpeed, agent.angularSpeed);
+            wheelController.SetRobotVelocity(0f, angularSpeed * Mathf.Deg2Rad);
+        }
+        // Then handle by local planner
+        else
+        {
+            rotationNeeded = false;
+            // set linear speed
+            float lineawrSpeed = Kp * distance;
+            lineawrSpeed = Mathf.Clamp(lineawrSpeed, -agent.speed, agent.speed);
+            wheelController.SetRobotVelocity(lineawrSpeed, 0f);
+        }
+    }
+    
 
     public void EnableAutonomy(bool changeArmPose = true)
     {
@@ -260,6 +313,7 @@ public class HRVONavigation : MonoBehaviour
         // Set trajectories
         SetTrajectory(path);
         waypointIndex = 0;
+        rotationNeeded = true;
         return (path.corners.Length != 0);
     }
     private void SetTrajectory(NavMeshPath path)

@@ -164,7 +164,7 @@ public class HRVOAgent2 : MonoBehaviour
 
     public InRangeSensor sensor;
 
-    public Vector3 zoomies = Vector3.zero;
+    //public Vector3 zoomies = Vector3.zero;
     public List<GameObject> neighbors = new List<GameObject>();
 
     void Start()
@@ -287,7 +287,7 @@ public class HRVOAgent2 : MonoBehaviour
 
                     // Compute HRVO for the pair of agents
                     Vector3 hrvo = hrvoAlgorithm.ComputeHRVO(currentAgent, otherAgent);
-                    Debug.Log(hrvo);
+                    //Debug.Log(hrvo);
 
                     currentAgent.hrvo.Add(hrvo);
                     
@@ -314,7 +314,7 @@ public class HRVOAgent2 : MonoBehaviour
         currentAgent.UpdatePreferredVelocity();
         Vector3 velocity = currentAgent.preferredVelocity;
 
-        zoomies = velocity;
+        //zoomies = velocity;
 
         return velocity;
     }
