@@ -1413,3 +1413,493 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003466 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.416 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1416ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1214ms)
+			LoadAssemblies (102ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (421ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (469ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (341ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3841 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.9 MB.
+System memory in use after: 159.0 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 4522.
+Total: 8.479594 ms (FindLiveObjects: 0.461447 ms CreateObjectMapping: 0.410224 ms MarkObjects: 7.467893 ms  DeleteObjects: 0.138475 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2003.063926 seconds.
+  path: Assets/Scripts/APF/APF_test1.cs
+  artifactKey: Guid(fbd8c3aefb639ace380ce8f356af10f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/APF/APF_test1.cs using Guid(fbd8c3aefb639ace380ce8f356af10f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f8a83d0eb835a67d0d18231429a5c8d') in 0.006520 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016865 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Refreshing native plugins compatible for Editor in 2.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.854 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5856ms)
+		BeginReloadAssembly (478ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (24ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (176ms)
+		EndReloadAssembly (5100ms)
+			LoadAssemblies (414ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1774ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (239ms)
+			SetupLoadedEditorAssemblies (1973ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (59ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (307ms)
+				ProcessInitializeOnLoadAttributes (1436ms)
+				ProcessInitializeOnLoadMethodAttributes (144ms)
+				AfterProcessingInitializeOnLoad (20ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (86ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3841 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.9 MB.
+System memory in use after: 159.1 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 4525.
+Total: 35.229347 ms (FindLiveObjects: 2.063304 ms CreateObjectMapping: 1.388932 ms MarkObjects: 31.266436 ms  DeleteObjects: 0.504555 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 314.393438 seconds.
+  path: Assets/Scripts/APF/Navigation.cs
+  artifactKey: Guid(c3c2aa60cddf5486f819745169bd6820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/APF/Navigation.cs using Guid(c3c2aa60cddf5486f819745169bd6820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71102385c547f370e120b2e19286dd52') in 0.025244 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014498 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Refreshing native plugins compatible for Editor in 2.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.791 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5793ms)
+		BeginReloadAssembly (475ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (25ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (173ms)
+		EndReloadAssembly (5033ms)
+			LoadAssemblies (418ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1736ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (234ms)
+			SetupLoadedEditorAssemblies (1966ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (58ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (297ms)
+				ProcessInitializeOnLoadAttributes (1437ms)
+				ProcessInitializeOnLoadMethodAttributes (147ms)
+				AfterProcessingInitializeOnLoad (20ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (88ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3842 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.0 MB.
+System memory in use after: 159.1 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 4529.
+Total: 26.886081 ms (FindLiveObjects: 1.053784 ms CreateObjectMapping: 1.075163 ms MarkObjects: 24.444307 ms  DeleteObjects: 0.308683 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 73.928837 seconds.
+  path: Assets/Scripts/Robot/ArmControlManager.cs
+  artifactKey: Guid(abdecafb5bfcf7e4bbff64c519040f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Robot/ArmControlManager.cs using Guid(abdecafb5bfcf7e4bbff64c519040f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cb1167bf0fe6435f4a24919efb513a5') in 0.019104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.598787 seconds.
+  path: Assets/Scripts/Experiment/NavigationExperiment.cs
+  artifactKey: Guid(19db6947867a77747a346b3691529463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Experiment/NavigationExperiment.cs using Guid(19db6947867a77747a346b3691529463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f35ac93d3458f2e64faf2a1a3950e0b0') in 0.003291 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014378 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Refreshing native plugins compatible for Editor in 2.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.262 seconds
+Domain Reload Profiling:
+	ReloadAssembly (6264ms)
+		BeginReloadAssembly (483ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (25ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (177ms)
+		EndReloadAssembly (5488ms)
+			LoadAssemblies (425ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1815ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (273ms)
+			SetupLoadedEditorAssemblies (2229ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (60ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (333ms)
+				ProcessInitializeOnLoadAttributes (1636ms)
+				ProcessInitializeOnLoadMethodAttributes (169ms)
+				AfterProcessingInitializeOnLoad (24ms)
+				EditorAssembliesLoaded (2ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (87ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3842 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.0 MB.
+System memory in use after: 159.2 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 4532.
+Total: 36.326224 ms (FindLiveObjects: 1.299707 ms CreateObjectMapping: 1.352127 ms MarkObjects: 33.142191 ms  DeleteObjects: 0.527057 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 287.365809 seconds.
+  path: Assets/Scenes/Hospital/Map.prefab
+  artifactKey: Guid(6965884c5e4111f488f3c4da46c7f798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Map.prefab using Guid(6965884c5e4111f488f3c4da46c7f798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f722daeb18e171ac28e240341e74b7a2') in 0.736887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.277425 seconds.
+  path: Assets/Scenes/Testing Scenes/Manipulation Scene.unity
+  artifactKey: Guid(50585143b5a725a97a34e77c95ef255b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Testing Scenes/Manipulation Scene.unity using Guid(50585143b5a725a97a34e77c95ef255b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '089bad4a2e891e9f188b40d0e0b4eed1') in 0.004828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.490051 seconds.
+  path: Assets/Scenes/Testing Scenes/Navigation Scene.unity
+  artifactKey: Guid(5245d93e859cd7b4296a10273d6e1c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Testing Scenes/Navigation Scene.unity using Guid(5245d93e859cd7b4296a10273d6e1c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a22ca65e8ef3f7c62d69f8074e9c748') in 0.004010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.277973 seconds.
+  path: Assets/Scenes/Test/NavMesh-Goal.asset
+  artifactKey: Guid(dd769abed661aaa4db0ad618f05bbf4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test/NavMesh-Goal.asset using Guid(dd769abed661aaa4db0ad618f05bbf4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea05001359736eb5aad3e0ead4dcae6a') in 0.007045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000562 seconds.
+  path: Assets/Scenes/Test/NavMesh-Nav Mesh.asset
+  artifactKey: Guid(40b00d7f97044af469083ab1e498efdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test/NavMesh-Nav Mesh.asset using Guid(40b00d7f97044af469083ab1e498efdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27f89b854b2c197b602809ed409b68a') in 0.005410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000637 seconds.
+  path: Assets/Scenes/Test/NavMesh-Nav Mesh 1.asset
+  artifactKey: Guid(a57e0f817e780724d9c88fcda127905c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test/NavMesh-Nav Mesh 1.asset using Guid(a57e0f817e780724d9c88fcda127905c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6815ccd7323b55b2223d0270d609a613') in 0.006005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000604 seconds.
+  path: Assets/Scenes/Test/NavMesh-nav move surface.asset
+  artifactKey: Guid(b6f432d8fde09f24290fe4fd049223cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test/NavMesh-nav move surface.asset using Guid(b6f432d8fde09f24290fe4fd049223cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '137db79df5c609e1d9b48e18c268faff') in 0.006076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.299398 seconds.
+  path: Assets/Scenes/Hospital/HospitalMapUtil.cs
+  artifactKey: Guid(8982729894e602946a520cd5e1bd4456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/HospitalMapUtil.cs using Guid(8982729894e602946a520cd5e1bd4456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4647f12db94470b00bb2c951782bab8') in 0.003303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.403965 seconds.
+  path: Assets/Scenes/Hospital/Hospital
+  artifactKey: Guid(70ccfe131ef9717f2b5bc961c68e7f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital using Guid(70ccfe131ef9717f2b5bc961c68e7f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53d210e59f750759f55bdb962232e70a') in 0.004031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.227163 seconds.
+  path: Assets/Scenes/Hospital/Hospital/LightingData.asset
+  artifactKey: Guid(942f95520c1d34895bc6cd3691fb3480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/LightingData.asset using Guid(942f95520c1d34895bc6cd3691fb3480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cc8bf6a8a8d8fe36de7fadbae51a7fc') in 0.007379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000579 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-9.exr
+  artifactKey: Guid(3b6bad9b9b57adeac896bdb2eb08e3cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-9.exr using Guid(3b6bad9b9b57adeac896bdb2eb08e3cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa60041005196acbd9c9b783748b16cf') in 0.112907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000660 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-20.exr
+  artifactKey: Guid(ad6ed395d8bdeb210bb1139e3f0c9e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-20.exr using Guid(ad6ed395d8bdeb210bb1139e3f0c9e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dcd230f7a976d78429a0b0355415e38') in 0.039630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000613 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-17.exr
+  artifactKey: Guid(f5e7691d65cea3f1a84841262078274f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-17.exr using Guid(f5e7691d65cea3f1a84841262078274f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f407d0b7e8a0829c7b14f973587907b') in 0.046547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000617 seconds.
+  path: Assets/Scenes/Hospital/Hospital/NavMesh-Nav Mesh Robot.asset
+  artifactKey: Guid(002404da05edc974da4bf44f83f235d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/NavMesh-Nav Mesh Robot.asset using Guid(002404da05edc974da4bf44f83f235d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '007afb3c350771d4c2915af0eeba869d') in 0.006580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000671 seconds.
+  path: Assets/Scenes/Hospital/Hospital/OcclusionCullingData.asset
+  artifactKey: Guid(4520f34c68fcbcd49a1145de233e1b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/OcclusionCullingData.asset using Guid(4520f34c68fcbcd49a1145de233e1b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6839ce35f623559c508927ef246606f4') in 0.017025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000689 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-6.exr
+  artifactKey: Guid(2b1d9c5b7e1703ad1aa28c8961f618b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-6.exr using Guid(2b1d9c5b7e1703ad1aa28c8961f618b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb9ed5065ee59b7f1de016504359a1d0') in 0.045480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000727 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-16.exr
+  artifactKey: Guid(58bb9b18bc6256256999fb83eaa845a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-16.exr using Guid(58bb9b18bc6256256999fb83eaa845a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51f8c3af3e3a4ffb09c070cab99f512b') in 0.057212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000614 seconds.
+  path: Assets/Scenes/Hospital/Hospital/NavMesh-Base.asset
+  artifactKey: Guid(e95d1e53ca47f554bae1c4890c8591fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/NavMesh-Base.asset using Guid(e95d1e53ca47f554bae1c4890c8591fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4cc7d9c32ba83a31f79d77ac88c8791') in 0.008537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000895 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-7.exr
+  artifactKey: Guid(4239bf2a210cf1fda9951ff7aaee0991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-7.exr using Guid(4239bf2a210cf1fda9951ff7aaee0991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7023c82773ae8a285ed1ac2cca99ab04') in 0.052891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000615 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-14.exr
+  artifactKey: Guid(b364cb604b9f01d298776b54c155b36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-14.exr using Guid(b364cb604b9f01d298776b54c155b36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b777b1cdc97fdce27edc2eeaa39ba1cd') in 0.041232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000708 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-3.exr
+  artifactKey: Guid(245e96bdb8e187076bc0bcf9efcb4684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-3.exr using Guid(245e96bdb8e187076bc0bcf9efcb4684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8df57bfcbce0d3a5ad508938ad7dc7ed') in 0.045499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000587 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-15.exr
+  artifactKey: Guid(1edff3ef307021915984951e29444681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-15.exr using Guid(1edff3ef307021915984951e29444681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce13c2152f73e840a076050a4b25ff99') in 0.048046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000648 seconds.
+  path: Assets/Scenes/Hospital/Hospital/Lightmap-0_comp_dir.png
+  artifactKey: Guid(bdde509be9c777bdaba12507eeefbae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/Lightmap-0_comp_dir.png using Guid(bdde509be9c777bdaba12507eeefbae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd450291f4d9850612532f0b656092ea1') in 0.045878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001188 seconds.
+  path: Assets/Scenes/Hospital/Hospital/NavMesh-Nav Mesh Robot 1.asset
+  artifactKey: Guid(c1c4ce7bdba23fc47aadafc96b1988d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/NavMesh-Nav Mesh Robot 1.asset using Guid(c1c4ce7bdba23fc47aadafc96b1988d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0f15338bd9a6a376e119224875838a6') in 0.006051 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000693 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-0.exr
+  artifactKey: Guid(6dffc96b9cffa1b06bd7ffe6b2cd20bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-0.exr using Guid(6dffc96b9cffa1b06bd7ffe6b2cd20bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90e498f3913ae25864542d2d3a422abe') in 0.043510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002198 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-1.exr
+  artifactKey: Guid(07e47d5bb3ae1a812813ac1a092a450c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-1.exr using Guid(07e47d5bb3ae1a812813ac1a092a450c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65a560590ed8e2b3899b19740fbeeb90') in 0.057964 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000570 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-11.exr
+  artifactKey: Guid(a8e72db4a567ea691bb37640e612d22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-11.exr using Guid(a8e72db4a567ea691bb37640e612d22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9c51b55619514cf70f7fcf95fef5870') in 0.058643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000613 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-12.exr
+  artifactKey: Guid(0c2dfacbfb4f7df2da8e63e88c8aadb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-12.exr using Guid(0c2dfacbfb4f7df2da8e63e88c8aadb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d2d8577b3d637839db5c1883ae10d40') in 0.044520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000672 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-18.exr
+  artifactKey: Guid(166b932519e4bb054aedb3e2d132deb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-18.exr using Guid(166b932519e4bb054aedb3e2d132deb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a4e035b28d4e5854cf8fb5c9bd92f8b') in 0.046640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000613 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-4.exr
+  artifactKey: Guid(47129e51b0970d0fbb4e4b20e141790e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-4.exr using Guid(47129e51b0970d0fbb4e4b20e141790e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa7ff9d04601a0b07b13be00026dfc95') in 0.052920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000761 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-10.exr
+  artifactKey: Guid(216adb8441e205048a3cd1ed54d49e45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-10.exr using Guid(216adb8441e205048a3cd1ed54d49e45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '457c8c0f8f203db9932d5372d0c3f9f9') in 0.056922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000681 seconds.
+  path: Assets/Scenes/Hospital/Hospital/NavMesh-NavMeshSurface.asset
+  artifactKey: Guid(b1bb362ac1c648f4cbf9467ed5565480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/NavMesh-NavMeshSurface.asset using Guid(b1bb362ac1c648f4cbf9467ed5565480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae065064cc8a8b0ffd77a9be333f7b1') in 0.006933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000647 seconds.
+  path: Assets/Scenes/Hospital/Hospital/NavMesh.asset
+  artifactKey: Guid(fdf00b1ec5b172c4eb0da0132e1b4bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/NavMesh.asset using Guid(fdf00b1ec5b172c4eb0da0132e1b4bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '134678b24c4c9b7346785627480a5a8c') in 0.006653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000636 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-5.exr
+  artifactKey: Guid(2f3bdec20fc1f7f48a8cea7f1a6aaa55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-5.exr using Guid(2f3bdec20fc1f7f48a8cea7f1a6aaa55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2ab76f27f64b6cd43afccd80b90ce1a') in 0.043844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000621 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-8.exr
+  artifactKey: Guid(9b141acf2026099b6a549cb8189b63e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-8.exr using Guid(9b141acf2026099b6a549cb8189b63e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee35a384339f429e3bd9f012050afd4f') in 0.050375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000633 seconds.
+  path: Assets/Scenes/Hospital/Hospital/Lightmap-0_comp_shadowmask.png
+  artifactKey: Guid(10a05a91630063ba7b33ae3bc2be7a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/Lightmap-0_comp_shadowmask.png using Guid(10a05a91630063ba7b33ae3bc2be7a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d67f02a5841b04ef52389e445c2765') in 0.037876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000663 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-19.exr
+  artifactKey: Guid(a1c5e326881de600690cf2af79313e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-19.exr using Guid(a1c5e326881de600690cf2af79313e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e8f73c58d74e9e2b6db558d932b6299') in 0.041272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000624 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-2.exr
+  artifactKey: Guid(a0649e25ff49ee4c2840e7f549507953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-2.exr using Guid(a0649e25ff49ee4c2840e7f549507953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f78cedb552a9d632fa32f09b9ccd4aa7') in 0.042196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000638 seconds.
+  path: Assets/Scenes/Hospital/Hospital/Lightmap-0_comp_light.exr
+  artifactKey: Guid(81f6d30f974d5358ebf6510652ecc01c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/Lightmap-0_comp_light.exr using Guid(81f6d30f974d5358ebf6510652ecc01c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83e04e241d43c0aac2ca2c9e56dda474') in 0.037621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000596 seconds.
+  path: Assets/Scenes/Hospital/Hospital/ReflectionProbe-13.exr
+  artifactKey: Guid(9b75f187c41a3e3e096e990556fc5351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hospital/Hospital/ReflectionProbe-13.exr using Guid(9b75f187c41a3e3e096e990556fc5351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69ec189adcb01adf14740769b0879b4d') in 0.045243 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 168.517929 seconds.
+  path: Assets/Scripts/APF/Navigation.cs
+  artifactKey: Guid(c3c2aa60cddf5486f819745169bd6820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/APF/Navigation.cs using Guid(c3c2aa60cddf5486f819745169bd6820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ddc5eff7331a81b1f36748001777892') in 0.003905 seconds 

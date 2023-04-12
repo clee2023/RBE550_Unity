@@ -3972,7 +3972,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7581683282309468264, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8675064451955262409, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3999,7 +3999,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 468575326}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9bf926ce23329dd44b586927440c9c84, type: 3}
   m_Name: 
@@ -4019,6 +4019,29 @@ MonoBehaviour:
   robot: {fileID: 468575327}
   navigation: {fileID: 468575328}
   goal: {fileID: 1648758380}
+--- !u!114 &468575330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468575327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3c2aa60cddf5486f819745169bd6820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 0
+  robot: {fileID: 468575327}
+  wheelController: {fileID: 0}
+  leftArmControlManager: {fileID: 0}
+  rightArmControlManager: {fileID: 0}
+  agent: {fileID: 0}
+  navMeshObstacles: []
+  replanTime: 5
+  goalPrefab: {fileID: 0}
+  lineRenderer: {fileID: 0}
+  drawPathEnabled: 1
 --- !u!114 &468575335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4035,8 +4058,8 @@ MonoBehaviour:
   obstacle: {fileID: 1262849939}
   navigation: {fileID: 468575328}
   maxForce: 20
-  maxVelocity: 100
-  safeDistance: 1
+  maxVelocity: 5
+  safeDistance: 0.5
   obstacleRadius: 0.1
 --- !u!1001 &472776361
 PrefabInstance:
