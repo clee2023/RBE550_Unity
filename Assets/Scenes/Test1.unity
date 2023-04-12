@@ -4011,7 +4011,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 468575327}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f83d9863f56bef7419d4d70ae4b25892, type: 3}
   m_Name: 
@@ -4028,14 +4028,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 468575327}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eeb297b353884615891b83d4540b6537, type: 3}
+  m_Script: {fileID: 11500000, guid: fbd8c3aefb639ace380ce8f356af10f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1648758380}
-  maxForce: 10
-  maxVelocity: 5
-  safeDistance: 5
-  obstacleRadius: 1
+  obstacle: {fileID: 1262849939}
+  navigation: {fileID: 468575328}
+  maxForce: 20
+  maxVelocity: 100
+  safeDistance: 1
+  obstacleRadius: 0.1
 --- !u!1001 &472776361
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9195,6 +9197,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 442531877585012063, guid: a10bfb04847088d568af8a0fe0d37c77, type: 3}
   m_PrefabInstance: {fileID: 1255091162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1262849939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4794976405199776384, guid: 99c60dd584c9e02af870a2c618acc03c, type: 3}
+  m_PrefabInstance: {fileID: 1373862447}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1279998699
 PrefabInstance:

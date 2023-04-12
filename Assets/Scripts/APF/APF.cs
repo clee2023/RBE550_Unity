@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -75,5 +75,5 @@ public class APF : MonoBehaviour
 
         return attractionForce;
     }
-}
+}*/
 
