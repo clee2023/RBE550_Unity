@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class HRVONavigation : MonoBehaviour
+public class AVONavigation : MonoBehaviour
 {
-    public HRVOUnityAgent hrvo;
+    public AVOUnityAgent hrvo;
     public InRangeSensor sensor;
     private Vector3 newVelocity;
 

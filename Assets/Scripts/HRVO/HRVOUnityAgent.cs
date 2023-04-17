@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine; // Assuming Unity engine is being used
 
-public class Agent
+public class HRVOAgent
 {
     public Vector3 position; // Current position of the agent
     public Vector3 velocity; // Current velocity of the agent
@@ -101,7 +101,7 @@ public class HRVOAlgorithm
     //     return agentsInRange;
     // }
 
-    public Vector3 ComputeVO(Agent currentAgent, Agent otherAgent)
+    public Vector3 ComputeVO(HRVOAgent currentAgent, HRVOAgent otherAgent)
     {
         // Compute relative position and velocity between the two agents
         Vector3 relativePosition = otherAgent.position - currentAgent.position;
@@ -116,7 +116,7 @@ public class HRVOAlgorithm
         return vo;
     }
 
-    public Vector3 ComputeRVO(Agent currentAgent, Agent otherAgent)
+    public Vector3 ComputeRVO(HRVOAgent currentAgent, HRVOAgent otherAgent)
     {
         // Compute relative position and velocity between the two agents
         Vector3 relativePosition = otherAgent.position - currentAgent.position;
@@ -141,7 +141,7 @@ public class HRVOAlgorithm
         return rvo;
     }
 
-    public Vector3 ComputeHRVO(Agent currentAgent, Agent otherAgent)
+    public Vector3 ComputeHRVO(HRVOAgent currentAgent, HRVOAgent otherAgent)
     {
         // Compute the VO and RVO for the pair of agents
         Vector3 vo = ComputeVO(currentAgent, otherAgent);
@@ -154,11 +154,11 @@ public class HRVOAlgorithm
     }
 }
 
-public class HRVOAgent2 : MonoBehaviour
+public class HRVOUnityAgent : MonoBehaviour
 {
     //public List<Agent> allAgents; // List of all agents in the environment
     public GameObject actor;
-    private Agent currentAgent; // The current agent for which HRVO is being calculated
+    private HRVOAgent currentAgent; // The current agent for which HRVO is being calculated
 
     private HRVOAlgorithm hrvoAlgorithm;
 
@@ -169,7 +169,7 @@ public class HRVOAgent2 : MonoBehaviour
 
     void Start()
     {
-        currentAgent = new Agent();
+        currentAgent = new HRVOAgent();
         hrvoAlgorithm = new HRVOAlgorithm();
     }
 
@@ -183,11 +183,11 @@ public class HRVOAgent2 : MonoBehaviour
 
         // Get the agents within range of the current agent
         //List<Agent> agentsInRange = hrvoAlgorithm.GetAgentsInRange(currentPosition, allAgents);
-        List<Agent> agentsInRange = new List<Agent>();
+        List<HRVOAgent> agentsInRange = new List<HRVOAgent>();
         neighbors.Clear();
         foreach (GameObject agent in sensor.scannedAgents)
         {
-            Agent newAgent = new Agent();
+            HRVOAgent newAgent = new HRVOAgent();
             newAgent.position = agent.transform.position;
             newAgent.velocity = agent.GetComponent<Rigidbody>().velocity;
             agentsInRange.Add(newAgent);
@@ -264,12 +264,12 @@ public class HRVOAgent2 : MonoBehaviour
 
         // }
 
-        foreach(Agent agent in agentsInRange)
+        foreach(HRVOAgent agent in agentsInRange)
         {
-            Agent focus = agent;
+            HRVOAgent focus = agent;
 
             // Compute RVO for each pair of agents within range
-            foreach (Agent otherAgent in agentsInRange)
+            foreach (HRVOAgent otherAgent in agentsInRange)
             {
                 if (otherAgent != currentAgent)
                 {

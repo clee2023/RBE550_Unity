@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class HRVOAgent : MonoBehaviour
+public class HRVOUnityAgentOLD : MonoBehaviour
 {
     // Define the desired speed and maximum acceleration of the agent
     public float desiredSpeed = 5f;

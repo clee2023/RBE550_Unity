@@ -7382,7 +7382,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 971306294}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b48ee423bdfe15bc99bf959a1f0f892, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d83cdaec57d32d0bb1fb7d45ad81742, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   actor: {fileID: 971306294}
@@ -8173,7 +8173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ea3ebf69d617d238981cea1a959a1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hrvo: {fileID: 1134094685}
+  hrvo: {fileID: 1134094676}
   sensor: {fileID: 1134094684}
   active: 1
   robot: {fileID: 1134094674}
@@ -8186,6 +8186,21 @@ MonoBehaviour:
   goalPrefab: {fileID: 2075622757900185994, guid: 8a7b41268e0286d47ae6853ee8ab563e, type: 3}
   lineRenderer: {fileID: 1580664219}
   drawPathEnabled: 1
+--- !u!114 &1134094676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134094674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d83cdaec57d32d0bb1fb7d45ad81742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actor: {fileID: 1134094674}
+  sensor: {fileID: 1134094684}
+  neighbors: []
 --- !u!114 &1134094680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8227,32 +8242,6 @@ MonoBehaviour:
   state: {fileID: 466988145}
   detector: {fileID: 466988144}
   goal: {x: 6.78, y: 0, z: 11.81}
---- !u!114 &1134094683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134094674}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f83bcd9d564e3ef9ba08312e3578b1ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desiredSpeed: 5
-  maxAcceleration: 10
-  maxSpeed: 100
-  avoidMargin: 2
-  avoidRadius: 0.38
-  neighbors: []
-  centerObject: {fileID: 973252759}
-  updateRate: 10
-  samples: 180
-  angleMin: -1.5708
-  angleMax: 1.5708
-  rangeMin: 0.1
-  rangeMax: 5
-  velocity: {x: 0, y: 0, z: 0}
 --- !u!114 &1134094684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8273,21 +8262,6 @@ MonoBehaviour:
   angleMax: 1.5708
   rangeMin: 0.1
   rangeMax: 5
---- !u!114 &1134094685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134094674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b48ee423bdfe15bc99bf959a1f0f892, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actor: {fileID: 1134094674}
-  sensor: {fileID: 1134094684}
-  neighbors: []
 --- !u!1001 &1143398646
 PrefabInstance:
   m_ObjectHideFlags: 0
