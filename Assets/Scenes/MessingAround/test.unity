@@ -2949,7 +2949,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6789262394414307240, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
       propertyPath: m_Name
-      value: Gopher
+      value: HRVOGopher
       objectReference: {fileID: 0}
     - target: {fileID: 6789262394414307243, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
       propertyPath: m_RootOrder
