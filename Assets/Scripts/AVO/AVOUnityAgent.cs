@@ -71,22 +71,24 @@ public class AVOAlgorithm
 {
 
     public float agentRadius = 0.38f; // Radius of agents for collision avoidance
+    public float maxAcceleration = 2f;
+    public float maxAccelerationOther = 3f;
 
 
-    public Vector3 ComputeVO(AVOAgent currentAgent, AVOAgent otherAgent)
-    {
-        // Compute relative position and velocity between the two agents
-        Vector3 relativePosition = otherAgent.position - currentAgent.position;
-        Vector3 relativeVelocity = otherAgent.velocity - currentAgent.velocity;
+    // public Vector3 ComputeVO(AVOAgent currentAgent, AVOAgent otherAgent)
+    // {
+    //     // Compute relative position and velocity between the two agents
+    //     Vector3 relativePosition = otherAgent.position - currentAgent.position;
+    //     Vector3 relativeVelocity = otherAgent.velocity - currentAgent.velocity;
 
-        // Compute the perpendicular vector to the relative velocity
-        Vector3 perpendicular = new Vector3(-relativeVelocity.z, 0, relativeVelocity.x).normalized;
+    //     // Compute the perpendicular vector to the relative velocity
+    //     Vector3 perpendicular = new Vector3(-relativeVelocity.z, 0, relativeVelocity.x).normalized;
 
-        // Compute the VO by combining the relative position and perpendicular vector
-        Vector3 vo = relativePosition + (relativeVelocity.normalized * Time.deltaTime) + (perpendicular * 0.5f);
+    //     // Compute the VO by combining the relative position and perpendicular vector
+    //     Vector3 vo = relativePosition + (relativeVelocity.normalized * Time.deltaTime) + (perpendicular * 0.5f);
 
-        return vo;
-    }
+    //     return vo;
+    // }
 
     public Vector3 ComputeRVO(AVOAgent currentAgent, AVOAgent otherAgent)
     {
@@ -113,14 +115,24 @@ public class AVOAlgorithm
         return rvo;
     }
 
+    // public Vector3 ComputeHRVO(AVOAgent currentAgent, AVOAgent otherAgent)
+    // {
+    //     // Compute the VO and RVO for the pair of agents
+    //     Vector3 vo = ComputeVO(currentAgent, otherAgent);
+    //     Vector3 rvo = ComputeRVO(currentAgent, otherAgent);
+
+    //     // Compute the AVO by combining the VO and RVO with the preferred velocity
+    //     Vector3 HRVO = vo + (rvo - vo) * 0.5f + currentAgent.preferredVelocity;
+
+    //     return HRVO;
+    // }
+
     public Vector3 ComputeAVO(AVOAgent currentAgent, AVOAgent otherAgent)
     {
-        // Compute the VO and RVO for the pair of agents
-        Vector3 vo = ComputeVO(currentAgent, otherAgent);
-        Vector3 rvo = ComputeRVO(currentAgent, otherAgent);
+        
 
         // Compute the AVO by combining the VO and RVO with the preferred velocity
-        Vector3 AVO = vo + (rvo - vo) * 0.5f + currentAgent.preferredVelocity;
+        Vector3 AVO = ComputeRVO(currentAgent, otherAgent) * maxAcceleration/(maxAcceleration+maxAccelerationOther);
 
         return AVO;
     }

@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class AVONavigation : MonoBehaviour
 {
-    public AVOUnityAgent hrvo;
+    public AVOUnityAgent AVO;
     public InRangeSensor sensor;
     private Vector3 newVelocity;
 
@@ -86,11 +86,11 @@ public class AVONavigation : MonoBehaviour
 
     private void ComputeNewVelocity(Vector3 waypoint)
     {
-        //hrvo.setTarget(waypoint);
-        newVelocity = hrvo.CalculatePreferredVelocity(waypoint);
+        //AVO.setTarget(waypoint);
+        newVelocity = AVO.CalculatePreferredVelocity(waypoint);
     }
 
-    private void NavigateToWaypointHRVO(Vector3 waypoint)
+    private void NavigateToWaypointAVO(Vector3 waypoint)
     {
         ComputeNewVelocity(waypoint);  
 
@@ -166,7 +166,7 @@ public class AVONavigation : MonoBehaviour
         {
             if (sensor.scannedAgents.Count != 0)
             {
-                NavigateToWaypointHRVO(waypoints[waypointIndex]);
+                NavigateToWaypointAVO(waypoints[waypointIndex]);
             }
             else{
                 NavigateToWaypoint(waypoints[waypointIndex]);
