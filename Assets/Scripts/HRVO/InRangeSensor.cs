@@ -55,6 +55,7 @@ public class InRangeSensor : MonoBehaviour
 
     public void FindAgents()
     {
+        scannedAgents.Clear();
         scannedAgents = ScanAgents();
     }
     

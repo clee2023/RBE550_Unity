@@ -167,9 +167,11 @@ public class AVONavigation : MonoBehaviour
             if (sensor.scannedAgents.Count != 0)
             {
                 NavigateToWaypointAVO(waypoints[waypointIndex]);
+                //Debug.Log("AVO");
             }
             else{
                 NavigateToWaypoint(waypoints[waypointIndex]);
+                //Debug.Log("Normal");
             }
         }
         // current waypoint reached

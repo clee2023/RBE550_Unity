@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine; // Assuming Unity engine is being used
 
 public class AVOAgent
@@ -21,21 +22,23 @@ public class AVOAgent
         {
             // Choose a new preferred velocity that lies within AVO
             preferredVelocity = ChooseNewPreferredVelocityFromAVO();
-        }
+            //Debug.Log(preferredVelocity.normalized);
+            if (goal != null)
+            {
+                Vector3 desiredVelocity = (goal - position).normalized * velocity.magnitude;
 
-        if (goal != null)
-        {
-            Vector3 desiredVelocity = (goal - position).normalized * velocity.magnitude;
-
-            preferredVelocity = (preferredVelocity.normalized + desiredVelocity.normalized).normalized * velocity.magnitude;
+                preferredVelocity = (preferredVelocity.normalized + desiredVelocity.normalized).normalized * velocity.magnitude;
+            }
         }
     }
 
     // Check if the preferred velocity lies within AVO
     private bool IsPreferredVelocityInAVO()
     {
+        //Debug.Log(AVO.Last());
         foreach (Vector3 AVOVelocity in AVO)
         {
+            //Debug.Log(AVOVelocity);
             if (Vector3.Dot(preferredVelocity, AVOVelocity) >= 0f)
             {
                 return true;
@@ -43,6 +46,7 @@ public class AVOAgent
         }
 
         return false;
+        //return true;
     }
 
     // Choose a new preferred velocity that lies within AVO
@@ -50,6 +54,7 @@ public class AVOAgent
     {
         Vector3 newPreferredVelocity = Vector3.zero;
         float maxDotProduct = float.MinValue;
+
 
         foreach (Vector3 AVOVelocity in AVO)
         {
@@ -70,7 +75,7 @@ public class AVOAgent
 public class AVOAlgorithm
 {
 
-    public float agentRadius = 0.38f; // Radius of agents for collision avoidance
+    public float agentRadius = 0.8f; // Radius of agents for collision avoidance
     public float maxAcceleration = 2f;
     public float maxAccelerationOther = 3f;
 
@@ -161,6 +166,7 @@ public class AVOUnityAgent : MonoBehaviour
     {
         currentAgent.position = actor.transform.position;
         currentAgent.velocity = actor.GetComponent<Rigidbody>().velocity;
+        //Debug.Log(currentAgent.velocity.magnitude);
         // Get the current position and velocity of the current agent
         Vector3 currentPosition = currentAgent.position;
         Vector3 currentVelocity = currentAgent.velocity;
@@ -179,6 +185,7 @@ public class AVOUnityAgent : MonoBehaviour
             neighbors.Add(agent);
         }
 
+        currentAgent.AVO.Clear();
         foreach(AVOAgent agent in agentsInRange)
         {
             AVOAgent focus = agent;
@@ -190,17 +197,17 @@ public class AVOUnityAgent : MonoBehaviour
                 {
 
                     // Compute AVO for the pair of agents
-                    Vector3 AVO = AVOAlgorithm.ComputeAVO(currentAgent, otherAgent);
-                    //Debug.Log(AVO);
+                    Vector3 avo = AVOAlgorithm.ComputeAVO(currentAgent, otherAgent);
 
-                    currentAgent.AVO.Add(AVO);
+                    currentAgent.AVO.Add(avo);
+                    //Debug.Log(currentAgent.AVO.Last());
                     
                     // Use the AVO to update the current velocity of the current agent
                     //currentVelocity += AVO;
                     currentAgent.UpdatePreferredVelocity();
 
                     // Debug visualization (optional)
-                    Debug.DrawRay(currentPosition, AVO, Color.yellow); // AVO visualization
+                    Debug.DrawRay(currentPosition, avo, Color.yellow); // AVO visualization
                 }
             }
         }
@@ -212,6 +219,8 @@ public class AVOUnityAgent : MonoBehaviour
         currentAgent.goal = goal;
         currentAgent.UpdatePreferredVelocity();
         Vector3 velocity = currentAgent.preferredVelocity;
+
+        Debug.DrawRay(currentAgent.position, velocity, Color.white); // HRVO visualization
 
         return velocity;
     }

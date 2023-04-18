@@ -167,9 +167,11 @@ public class HRVONavigation : MonoBehaviour
             if (sensor.scannedAgents.Count != 0)
             {
                 NavigateToWaypointHRVO(waypoints[waypointIndex]);
+                //Debug.Log("HRVO Nav");
             }
             else{
                 NavigateToWaypoint(waypoints[waypointIndex]);
+                //Debug.Log("Normal Nav");
             }
         }
         // current waypoint reached

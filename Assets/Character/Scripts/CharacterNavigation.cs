@@ -32,6 +32,9 @@ public class CharacterNavigation : MonoBehaviour
             worldVelocity.Normalize(); // animation blender range [0, 1]
         agentVelocity = agent.transform.InverseTransformDirection(worldVelocity);
         UpdateAnimator(agentVelocity);
+
+        //set rigid body velocity for RVO calcs
+        GetComponent<MonoBehaviour>().gameObject.GetComponent<Rigidbody>().velocity = agentVelocity;
     }
 
     private void UpdateAnimator(Vector3 velocity)
