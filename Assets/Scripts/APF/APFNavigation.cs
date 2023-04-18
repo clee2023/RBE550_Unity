@@ -94,9 +94,9 @@ public class APFNavigation : MonoBehaviour
         ComputeNewVelocity(waypoint);  
 
         // float angle = Mathf.Atan2(newVelocity.z, newVelocity.x); // Calculate the angle between the agent's current heading and the vector to the preferred velocity.
-        float maxAngle = 1.8f; // max speed
+        float maxAngle = 2.0f; // max speed
         // float angularSpeed = Mathf.Clamp(angle, -maxAngle, maxAngle); // Set the angular velocity to the angle between the agent's current heading and the vector to the preferred velocity, clamped to the maximum turning angle.
-        float Kp = 0.35f;
+        float Kp = 0.05f;
         // Errors
         Quaternion targetRotation = Quaternion.LookRotation(new Vector3(newVelocity[0], 0.0f, newVelocity[2]).normalized);
         float angleDifference = Mathf.DeltaAngle(targetRotation.eulerAngles[1], 
