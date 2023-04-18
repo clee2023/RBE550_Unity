@@ -11,12 +11,12 @@ public class ControlGopher2 : MonoBehaviour
 	public StateReader state;
 	public SurroundingDetection detector;
 
+	public DataRecorderTest recorder;
+
 	// public Transform goal;
 	public Vector3 goal;
 
 	private Vector3 linearVelocity;
-
-
 
 
 	void Start()
@@ -24,11 +24,18 @@ public class ControlGopher2 : MonoBehaviour
 		// navigation.SetGoal(goal.position);
 		navigation.SetGoal(goal);
 		navigation.EnableAutonomy(false);
+		recorder.StartRecording("testingDataCollection", robot);
 	}
 
 	void Update()
 	{
 		linearVelocity = state.linearVelocity;
+
+        float tolerance = 0.1f;
+		if ((robot.transform.position - goal).magnitude < tolerance)
+		{
+			recorder.StopRecording();
+		}
 
 	}
 
