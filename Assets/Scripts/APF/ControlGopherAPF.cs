@@ -6,11 +6,13 @@ public class ControlGopherAPF : MonoBehaviour
 {
     public GameObject robot;
     public APFNavigation navigation;
-    public Transform goal;
+
+    // public Transform goal;
+    public Vector3 goal;
     // Start is called before the first frame update
     void Start()
     {
-        navigation.SetGoal(goal.position);
+        navigation.SetGoal(goal);
 	    navigation.EnableAutonomy(false);
     }
 

@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 1944830714722499639}
   - component: {fileID: 2074635367}
   - component: {fileID: 3791229302569914360}
-  - component: {fileID: 5344133836989056755}
-  - component: {fileID: 7169013625675608974}
   m_Layer: 6
   m_Name: Male Nurse
   m_TagString: Human
@@ -88,21 +86,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
---- !u!114 &5344133836989056755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4794976405199776384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0e75e8ff60e1bd0389e12b58ada28a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 8900376989591558680}
-  agent: {fileID: 3791229302569914360}
-  loop: 0
 --- !u!1001 &3093665212892112777
 PrefabInstance:
   m_ObjectHideFlags: 0
