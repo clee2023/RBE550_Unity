@@ -18,11 +18,9 @@ public class CharacterNavigation : MonoBehaviour
     private int currentIndex = 0;
 
 
-    public Transform goal;
-
     void Start()
     {
-	agent.destination = goal.position;
+
     }
 
     void Update()
@@ -34,6 +32,9 @@ public class CharacterNavigation : MonoBehaviour
             worldVelocity.Normalize(); // animation blender range [0, 1]
         agentVelocity = agent.transform.InverseTransformDirection(worldVelocity);
         UpdateAnimator(agentVelocity);
+
+        //set rigid body velocity for RVO calcs
+        GetComponent<MonoBehaviour>().gameObject.GetComponent<Rigidbody>().velocity = agentVelocity;
     }
 
     private void UpdateAnimator(Vector3 velocity)
@@ -80,5 +81,10 @@ public class CharacterNavigation : MonoBehaviour
                 }
             agent.SetDestination(targetTrajectory[currentIndex]);
         }
+    }
+
+    public Vector3 getCurrentWaypoint()
+    {
+        return targetTrajectory[currentIndex];
     }
 }
