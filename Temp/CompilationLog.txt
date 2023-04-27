@@ -1,2 +1,98 @@
+# Starting compiling UnityEngine.TestRunner.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-cf409e06c6a9070529c84cfe68c11bf2
+# Starting compiling UnityEngine.UI.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-8633757041a6023deb8cf481dd2bdbfb
+# Starting compiling UnityEditor.TestRunner.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-13a1fc106d0af61ddbe8507bad9ec75e
+# Starting compiling UnityEditor.UI.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-6d97b1c93931ed03393053ba6dd1509a
+# Starting compiling Unity.VSCode.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-9e4179ee320c51e29a1793d25f2335ca
+# Starting compiling Unity.RenderPipelines.Universal.Shaders.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-acb453af77891aa73be17fc92c35609a
+# Starting compiling Unity.VisualStudio.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-3363d39f34b692f839afb0ba3f438003
+# Starting compiling vhacd.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-f6014902d441324e8b1bc0016e0b2d16
+# Starting compiling Unity.Timeline.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-bd3c541e2c2283d1ca1dcc863d90d6c9
+# Starting compiling Unity.TextMeshPro.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-e9a59f3511c4b0f8dada441878f03957
+# Starting compiling Unity.Searcher.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-106872ce05439993b8dd61d995614107
+# Starting compiling Unity.Robotics.UrdfImporter.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-4d183d0aa2a181057a96fcb791e19bba
+# Starting compiling Unity.ShaderGraph.Utilities.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-b97f857901661070687b18709782ba46
+# Starting compiling Unity.InputSystem.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-85fef143d2e322838a58312333b86cf0
+# Starting compiling Unity.Rider.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-cb0c864ca4d529de599b003459d34a87
+# Starting compiling Unity.RenderPipelines.Core.ShaderLibrary.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-d1f7b4af3151c458ebad4c3c60f15da9
+# Starting compiling Unity.PlasticSCM.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-6d827cb303646cedcb0643b33f56b290
+# Starting compiling Unity.EditorCoroutines.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-89d78ab0b1d43b7e190ea1f7c361c4d2
+# Starting compiling Unity.Mathematics.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-0bae0456698a6e813bfd250b3f2c2edf
+# Starting compiling Unity.TextMeshPro.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-592a59f99eb0a12be91f79495ec498f7
+# Starting compiling Unity.Services.Core.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-b88ca3d4687cd1f2abadf240eb054f13
+# Starting compiling Unity.Robotics.UrdfImporter.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-b98b11aa8ab71fb66a68171165553928
+# Starting compiling Unity.Settings.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-ff0f165a0c3fda545af0278d818c350c
+# Starting compiling Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-5ee3f1a6593f6004793d1480f09cc065
+# Starting compiling Unity.Timeline.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-d3d3775cd54ea92b2b04544b443a1348
+# Starting compiling Unity.CollabProxy.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-a28f3d8f1635e0d92a6d6d30fde74fa0
+# Starting compiling NavMeshComponents.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-305c18d69860bf282b5bb273ec7308e9
+# Starting compiling Unity.ProGrids.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-0c05a4dfeaecfd7a28f753dcd2f14925
+# Starting compiling NavMeshComponentsEditor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-fe987fdf1428404aca43fa2c3a630303
+# Starting compiling Unity.ProGrids.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-bb979c1794bef51fa9baeea4a490adbf
+# Starting compiling Unity.RenderPipelines.Core.Runtime.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-b23b4e1cdfd0fefc1add260fefa09dbd
+# Starting compiling Unity.Robotics.ROSTCPConnector.MessageGeneration.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-547804f35b5e7788f8cac1e6845d18d7
+# Starting compiling Unity.Mathematics.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-21f00c642301da17c92be5afac316098
+# Starting compiling Unity.SysrootPackage.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-76528ffca209dc6ddb41e09d554df206
+# Starting compiling Unity.Robotics.ROSTCPConnector.Messages.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-a2612fe6e179404df98d40d761627936
+# Starting compiling Unity.ShaderGraph.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-80f2a2d94d7e66d678a0df6389d308ce
+# Starting compiling Unity.RenderPipeline.Universal.ShaderLibrary.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-f6d1e102ff60c1a79809964a1a518e94
+# Starting compiling Unity.RenderPipelines.Core.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-69c8dc99eaa4c7300997f7be38c3332e
+# Starting compiling Unity.Sysroot.Linux_x86_64.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-f65bf671614a7a6fba6f206ec091ead9
+# Starting compiling Unity.Robotics.ROSTCPConnector.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-b130007f9fe8c4c35b69c0dc16097802
+# Starting compiling Unity.RenderPipelines.Universal.Runtime.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-1b75867d3e03b0f8986ab1623be330a3
+# Starting compiling Unity.Toolchain.Linux-x86_64.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-d93334faeb289197abc4dc286bc0811a
+# Starting compiling Unity.Robotics.Visualizations.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-3dc117711f068c2ae824a8a459a869b2
+# Starting compiling Unity.Robotics.ROSTCPConnector.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-0bc9e94ba3da0b550b9043d4160e962d
+# Starting compiling Cinemachine.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-08d92529d8b2b524fb5d9cfaf424e323
+# Starting compiling Unity.Robotics.Visualizations.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-51766843b452a1faabd7b9e4c12677e8
+# Starting compiling Unity.RenderPipelines.Universal.Editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-8020ec9870e5087f0ab9362623271375
+# Starting compiling com.unity.cinemachine.editor.dll
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-e94e61ead37e39b54bbc1552e4d8d29f
 # Starting compiling Assembly-CSharp.dll
-/home/citruseel/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-021a57fdf09a3875a9f0bade075040fd
+/home/jesulona/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-1e4b600e3dd0864218a6bcf8b41c91a1
