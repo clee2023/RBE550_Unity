@@ -4,10 +4,10 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class ControlGopherHRVO : MonoBehaviour
+public class ControlGopherML : MonoBehaviour
 {
 	public GameObject robot;
-	public HRVONavigation navigation;
+	public MLNavigation navigation;
 	public StateReader state;
 	public SurroundingDetection detector;
 
