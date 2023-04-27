@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class MLNavigation : MonoBehaviour
 {
-    public MLAgent hrvo;
+    public MLUnityAgent ml;
     public InRangeSensor sensor;
     private Vector3 newVelocity;
 
@@ -87,10 +87,10 @@ public class MLNavigation : MonoBehaviour
     private void ComputeNewVelocity(Vector3 waypoint)
     {
         //hrvo.setTarget(waypoint);
-        newVelocity = hrvo.CalculatePreferredVelocity(waypoint);
+        newVelocity = ml.CalculatePreferredVelocity(waypoint);
     }
 
-    private void NavigateToWaypointHRVO(Vector3 waypoint)
+    private void NavigateToWaypointML(Vector3 waypoint)
     {
         ComputeNewVelocity(waypoint);  
 
@@ -166,7 +166,7 @@ public class MLNavigation : MonoBehaviour
         {
             if (sensor.scannedAgents.Count != 0)
             {
-                NavigateToWaypointHRVO(waypoints[waypointIndex]);
+                NavigateToWaypointML(waypoints[waypointIndex]);
                 //Debug.Log("HRVO Nav");
             }
             else{
