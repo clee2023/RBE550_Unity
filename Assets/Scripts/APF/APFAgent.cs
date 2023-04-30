@@ -65,7 +65,7 @@ public class APFAgent : MonoBehaviour
             avoidanceForce += CalculateAvoidanceForce(obstacle, dynamicSafeDistance);
         }
 
-        return avoidanceForce/2 + attractionForce*10;
+        return avoidanceForce/2 + attractionForce*20;
     }
 
     private Vector3 CalculateAvoidanceForce(GameObject obstacle, float safeDistance)

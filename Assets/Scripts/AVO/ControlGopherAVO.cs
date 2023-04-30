@@ -16,6 +16,8 @@ public class ControlGopherAVO : MonoBehaviour
 
 	private Vector3 linearVelocity;
 
+	public DataRecorderTest recorder;
+
 
 
 
@@ -24,11 +26,18 @@ public class ControlGopherAVO : MonoBehaviour
 		// navigation.SetGoal(goal.position);
 		navigation.SetGoal(goal);
 		navigation.EnableAutonomy(false);
+		recorder.StartRecording("testingDataCollectio2", robot);
 	}
 
 	void Update()
 	{
 		linearVelocity = state.linearVelocity;
+
+		float tolerance = 0.1f;
+		if ((robot.transform.position - goal).magnitude < tolerance)
+		{
+			recorder.StopRecording();
+		}
 
 	}
 
