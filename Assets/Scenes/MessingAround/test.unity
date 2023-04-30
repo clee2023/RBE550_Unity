@@ -4059,7 +4059,7 @@ MonoBehaviour:
   replanTime: 5
   goalPrefab: {fileID: 2075622757900185994, guid: 8a7b41268e0286d47ae6853ee8ab563e, type: 3}
   lineRenderer: {fileID: 7968166}
-  drawPathEnabled: 0
+  drawPathEnabled: 1
 --- !u!114 &370750282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5399,7 +5399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6789262394414307240, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6789262394414307240, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
       propertyPath: m_TagString
@@ -9295,6 +9295,7 @@ MonoBehaviour:
   robot: {fileID: 1030616148}
   navigation: {fileID: 1030616150}
   goal: {x: 6.78, y: 0, z: 11.81}
+  recorder: {fileID: 1030616159}
 --- !u!114 &1030616152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9329,6 +9330,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 1030616148}
   distanceTraveled: 0
+--- !u!114 &1030616159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030616148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1fa03d028f9a321bc5bd64de847300, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateRate: 10
+  isRecording: 0
 --- !u!1001 &1035048050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11360,7 +11375,7 @@ MonoBehaviour:
   replanTime: 5
   goalPrefab: {fileID: 2075622757900185994, guid: 8a7b41268e0286d47ae6853ee8ab563e, type: 3}
   lineRenderer: {fileID: 1712570764}
-  drawPathEnabled: 0
+  drawPathEnabled: 1
 --- !u!114 &1243657081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11378,6 +11393,7 @@ MonoBehaviour:
   state: {fileID: 1974829038}
   detector: {fileID: 963219924}
   goal: {x: 6.78, y: 0, z: 11.81}
+  recorder: {fileID: 1243657090}
 --- !u!114 &1243657082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11427,6 +11443,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 1243657079}
   distanceTraveled: 0
+--- !u!114 &1243657090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243657079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1fa03d028f9a321bc5bd64de847300, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateRate: 10
+  isRecording: 0
 --- !u!195 &1244073572 stripped
 NavMeshAgent:
   m_CorrespondingSourceObject: {fileID: 3639390875846661778, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
@@ -16194,11 +16224,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1247397182830612179, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
       propertyPath: debugVisualization
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1247397182830612179, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
       propertyPath: seperateHumanDetection
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2524245022124469184, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
       propertyPath: m_Enabled
@@ -16254,6 +16284,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4914549699303064443, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
       propertyPath: instantiateScanResult
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914549699303064443, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
+      propertyPath: seperateHumanDetection
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4985414768090538490, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
@@ -16550,7 +16584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6789262394414307240, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6789262394414307240, guid: d389cac5588eb6f4da30dee89aa90d4d, type: 3}
       propertyPath: m_TagString
